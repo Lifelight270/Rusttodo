@@ -1,0 +1,15 @@
+[package]
+name = "glass-todo"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "glass-todo"
+path = "main.rs"
+
+[dependencies]
+leptos = { version = "0.8", features = ["csr"] }
+
+[profile.release]
+opt-level = "s"
+lto = true
